@@ -248,7 +248,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -271,7 +271,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: none;
 }
 
 .btn-color-2:hover, .btn-color-1:hover {
@@ -325,12 +325,18 @@ section {
   padding: 1.5rem;
   flex: 1;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  backdrop-filter: saturate(145%);
-  backdrop-filter: sepia(10%);
-  /* backdrop-filter: invert(25%); */
+  transition: 400ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
+  background-image: linear-gradient(275deg, #d9ecb3, white);
+}
+
+.details-container:hover{
+  box-shadow: 0 0 25px rgba(0, 0, 0 ,0.3);
+  -webkit-transform: scale(1.1);
+  border-color: black;
+  transform: scale(1.1);
 }
 
 .section-container {
